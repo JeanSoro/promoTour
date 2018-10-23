@@ -36,9 +36,12 @@ header {
 }
 
 #hero-section {
+
   position: relative;
   height: 100vh;
+
   .blurbg {
+
     background-image: linear-gradient(45deg, rgba(25,32,42,1) 0%,rgba(25,32,42,1) 33%,rgba(25,32,42,0.96) 36%,rgba(23,32,42,0.86) 43%, rgba(176,38,183, 0.57) 62%, rgba(125,185,232,0) 100%),url('/img/top.jpg');
     background-size:cover;
     filter: blur(40px) saturate(130%);
@@ -47,6 +50,7 @@ header {
     width: 100%;
     z-index: 1;
   }
+
   .floating-img {
     position: absolute;
     width: 100%;
@@ -59,8 +63,11 @@ header {
 
   }
   .artist-img {
+
     width: 30%;
+
     img {
+
       filter: contrast(150%);
       width: 100%;
     }
@@ -96,4 +103,125 @@ header {
       width: 50%;
     }
   
+}
+
+#media-section {
+  background-image: url("/img/bandana.jpeg");
+  background-size: cover;
+  padding: 100px 0;
+
+  .title {
+
+    background: #000;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+  }
+  .videos {
+
+    padding: 80px 50px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+    -webkit-box-shadow: 0px 13px 24px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 13px 24px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 13px 24px -8px rgba(0,0,0,0.75);
+
+    .video {
+      border-radius: 4px;
+      height: 300px;
+      overflow: hidden;
+
+      iframe {
+        height: 100%;
+      }
+    }
+  }
+}
+
+#music {
+
+  padding: 80px 0;
+  position: relative;
+
+  .blurbg {
+
+    background-image: linear-gradient(45deg, rgba(255,253,60,1) 0%,rgba(255,253,60,1) 33%,rgba(255,253,60,0.96) 36%,rgba(255,253,60,0.86) 43%, rgba(176,38,183, 0.57) 62%, rgba(125,185,232,0) 100%),url('/img/album69.jpg');
+    background-size:cover;
+    filter: blur(40px) saturate(130%);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .container {
+    display: flex;
+    padding: 0 50px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    .title {
+      font-size: 3rem;;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .sub-title {
+      font-size: 1.7rem;;
+      font-weight: 500;
+      margin-bottom: 100px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .singles {
+
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin-bottom: 80px;
+      width: 400px;
+
+      li {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+
+    .streamingLogos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+  }
+
+  .album-covers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    img {
+      
+      width: 50%;
+    }
+  }
 }
